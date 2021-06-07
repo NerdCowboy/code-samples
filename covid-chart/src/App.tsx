@@ -215,7 +215,8 @@ function AppContents() {
             <h2>Select a country to see COVID Rates</h2>
           </div>
         )}
-        {data && selectedCountry && (
+        {/* Need to check searchResults length due to Charting re-rendering bug */}
+        {data && selectedCountry && searchResults.length === 0 && (
           <div className={styles.chartOuterWrapper}>
             <div className={styles.chartInnerWrapper}>
               <h2 className={styles.chartHeading}>
