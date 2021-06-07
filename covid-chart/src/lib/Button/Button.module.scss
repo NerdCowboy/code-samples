@@ -1,0 +1,47 @@
+.button {
+  // Reset
+  border: none;
+  background: transparent;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  @media screen and (-ms-high-contrast: active) {
+    border: 2px solid currentcolor;
+  }
+
+  // Defaults
+  padding: 0.75rem 1.2rem;
+  border: solid 1px transparent;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease-in-out;
+
+  abbr {
+    text-decoration: none;
+  }
+}
+
+.primary {
+  background-color: rebeccapurple;
+  border-color: rebeccapurple;
+  color: white;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken(rebeccapurple, 10%);
+  }
+}
+
+.outline {
+  background-color: white;
+  color: rebeccapurple;
+  border-color: rebeccapurple;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #f1f1f1;
+  }
+}
